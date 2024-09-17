@@ -1,0 +1,84 @@
+# --- General ---
+# Ignore any environment variable files
+.env
+.env.*
+
+# --- Node.js (React Frontend) ---
+# Dependency directories
+client/node_modules/
+client/.cache/
+client/.next/
+client/build/
+client/dist/
+
+# Logs
+client/logs
+client/*.log
+client/yarn-debug.log*
+client/yarn-error.log*
+
+# Miscellaneous
+client/.DS_Store
+client/npm-debug.log
+client/.eslintcache
+
+# --- ASP.NET Core (Backend) ---
+# Ignore bin and obj directories in any subfolder (for builds)
+**/bin/
+**/obj/
+
+# Visual Studio temporary files
+.vscode/
+*.vs/
+.vs/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+
+# ASP.NET Core user secrets
+**/secrets.json
+
+# .NET Core package directory
+packages/
+.nuget/
+
+# Build outputs
+*.dll
+*.exe
+*.app
+*.ipa
+*.dSYM
+*.so
+*.dylib
+*.pdb
+*.tar.gz
+*.zip
+
+# Lock files for NuGet
+project.lock.json
+project.fragment.lock.json
+
+# --- Docker ---
+# Ignore Docker-specific override files
+docker-compose.override.yml
+
+# Ignore local docker-compose overrides
+**/docker-compose.override.yml
+
+# --- Git and Miscellaneous ---
+# Ignore any Git-specific folders or logs
+.git/
+*.orig
+
+# Ignore IDE-specific directories and files (e.g., JetBrains Rider, VSCode)
+.idea/
+.vscode/
+_ReSharper*/ 
+JetBrains/
+
+# Ignore macOS-specific metadata files
+.DS_Store
