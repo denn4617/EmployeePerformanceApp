@@ -8,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+builder.Services.AddScoped<IEmployeeTaskService, EmployeeTaskService>();
+
 
 // Add the DbContext and PostgreSQL connection string
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
